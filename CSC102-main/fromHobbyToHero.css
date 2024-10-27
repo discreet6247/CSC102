@@ -1,0 +1,102 @@
+.title-container
+{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    gap: 30px;
+}
+.title 
+{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 75px;
+    color:rgb(255, 0, 0); /* Title font color*/
+    margin: 0;
+    text-align: center;
+}
+
+.tite-image/*super not working right now, probably need to look at how it is embeded.  its not in as a class Future Joe problem*/
+{
+    width: 5px;
+    height: auto;
+}
+
+body
+{
+    background-color:rgba(0, 32, 108, 0.651);
+    /*color:rgb(0, 0, 0);*/
+h1{
+    text-align:center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 3em;
+   
+}
+h2{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2em;
+}
+
+background-image: url('Images/ufoDroneFireWorks.png');/*background image for the page*/
+background-repeat:repeat-y; /* repeats background image vertically*/
+background-blend-mode:lighten;
+background-size:contain;  /*Stretches background image from left to right*/
+background-position:center;
+background-repeat:inherit;
+
+font-family: 'Times New Roman', serif; /* New font type */
+font-size: 1.5em;  /*New font size*/
+color: rgb(30, 255, 0); /* New font color */
+}
+
+/*Text boxes for background text boxes*/
+
+.container {
+    text-align: center;
+  }
+  
+.text-box 
+{
+background-color: rgba(0, 0, 0, 0.8);
+color:aqua; 
+padding: 20px;
+border-radius: 10px;
+max-width: 500px;
+margin: 0 auto;
+box-shadow: 0px 4 px 10 px rgba(0, 0, 0, 0.1);
+text-align: center;
+font-size: 18px;
+}
+
+.navbar 
+{
+    background-color:rgb(21, 4, 74);
+    padding: 15px; /*Space around the link*/
+    height: 100;
+    width: 375px;
+    float: top;
+    padding: 5px;
+    line-height: 30px;
+}
+.nav-links 
+{
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.nav-links li 
+{
+    margin-right: 20px; /*space between links*/
+}
+
+.nav-links a:hover
+{
+color:greenyellow; /*color change when hovered over*/
+}
+
+footer
+{    
+text-align:center;
+margin-right:cover;
+background-color:rgb(21, 4, 74);
+color:white;
+}
