@@ -1,0 +1,94 @@
+<!-- Joseph Haskins 20 October 2024 -->
+ <!-- DOCTYPE this is the first tag on the page and it tells the browser that this is an HTML5 page-->
+ <!DOCTYPE html>
+  
+ <html>
+  
+   <head>
+
+    <!--Settings for the "Roll" and "Hold" buttons-->
+    <style>
+    body { font-family: Arial, sans-serif; text-align: center;}
+    button { padding: 20px 30px; font-size: 18px; cursor: pointer; margin: 5px; }
+    #totalScore, #roundScore, #message { font-size: 24px; margin: 20px; color: #ffffff; }
+
+
+</style>
+
+   </head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+   <link rel = "stylesheet" href = "fromHobbyToHero.css">
+
+
+<script src = "fromHobbyToHero.js"></script>
+
+
+    <body>
+      <!--Navigation bar links-->
+      <nav class = "navbar">
+        <ul class = "nav-links">
+          <li><a href = "fromHobbyToHero.html">HOME</a></li>
+          <li><a href = "fromHobbyToHeroBoards.html">BOARDS</a></li>
+          <li><a href = "fromHobbyToHeroGames.html">GAMES</a></li>
+          <li><a href = "fromHobbyToHeroUXS.html">UXS</a></li>
+          <li><a href = "fromHobbyToHerosValidate.html">FORMS</a></li>
+          <li><a href = "Palindrome.html">WORD</a></li>
+        </ul>
+    </nav>
+
+      <h1 class = "title">From Hobby to Hero : Games</h1>
+      <br>
+      <br>
+      <div id = "instructions" class = "text-box">
+      <h1 class = "title">Push your luck!!</h1>
+      It's time to play a game.  Do you feel lucky? Press the roll function to give it a whirl. Roll a 6 sided dice, a 1 resets your Round score to 0, anything else adds to your total. Be sure to hold your points.
+    </div>
+
+
+
+<div id = "instuctions" class ="text-box">
+      <!--Push your luck game functions
+      Game seems to be operating fine.  Still a formatting issue.
+      Upon pressing the Roll button screen "zooms in"
+      
+      Possible additions to game
+      Number of "lives unit its all reset"
+      Total high score of all who have visited
+      once reaching a certain score the dice is theen doubles, doubling the reward and 1 potential-->
+
+      <!--Displays "Total Score" and "Round Score" starting at 0
+      Button functions "rollDice" and "holdPoints" are executed when clicked.  Functions located in fromHobbyToHero.js
+      lastely dispays the updated game message-->
+
+      <div id="totalScore">Total Score: 0</div>
+      <div id="roundScore">Round Score: 0</div>
+      <button onclick="rollDice()">Roll</button>
+      <button onclick="holdPoints()">Hold</button>
+      <div id = "message" class = "text-box"></div>
+
+      <div class = "title-container">
+        <img src = "Images/wombatDrone.png" alt = "description of image" class = "image2" >
+      </div>
+      </div>
+
+<div class = "title-container">
+      
+
+      <style>
+
+        
+    </style>    
+  <br>
+  <br>
+  <br>
+</div>
+<!--Variable startting scores for Push your luck game-->
+<script>
+  var totalScore = 0;
+  var roundScore = 0;
+</script>
+
+
+    </body>
+ </html>
