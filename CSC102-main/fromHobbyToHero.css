@@ -4,6 +4,7 @@
     justify-content:center;
     align-items:center;
     gap: 30px;
+    
 }
 .title 
 {
@@ -14,9 +15,9 @@
     text-align: center;
 }
 
-.tite-image/*super not working right now, probably need to look at how it is embeded.  its not in as a class Future Joe problem*/
+.title-image/*super not working right now, probably need to look at how it is embeded.  its not in as a class Future Joe problem*/
 {
-    width: 5px;
+    width: 75px;
     height: auto;
 }
 
@@ -34,6 +35,20 @@ h2{
     font-family:'Times New Roman', Times, serif;
     font-size: 2em;
 }
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    text-align:center;
+}
+h4
+{
+    background-color:rgba(0, 0, 0, 0.8);
+    padding: 20px; /*Space around the link*/
+    height:200px;
+    width:fit-content;
+    line-height: 20px;
+}
+
 
 background-image: url('Images/ufoDroneFireWorks.png');/*background image for the page*/
 background-repeat:repeat-y; /* repeats background image vertically*/
@@ -59,7 +74,7 @@ background-color: rgba(0, 0, 0, 0.8);
 color:aqua; 
 padding: 20px;
 border-radius: 10px;
-max-width: 500px;
+max-width: 1200px;
 margin: 0 auto;
 box-shadow: 0px 4 px 10 px rgba(0, 0, 0, 0.1);
 text-align: center;
@@ -68,13 +83,15 @@ font-size: 18px;
 
 .navbar 
 {
-    background-color:rgb(21, 4, 74);
+    background-color:rgba(0, 0, 0, 0.8);
     padding: 15px; /*Space around the link*/
-    height: 100;
-    width: 375px;
-    float: top;
-    padding: 5px;
+    height: 30px;
+    width: fit-content;
     line-height: 30px;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+    border-bottom-left-radius: 20px 20px;
+    border-bottom-right-radius:20px 20px;
 }
 .nav-links 
 {
@@ -88,15 +105,49 @@ font-size: 18px;
     margin-right: 20px; /*space between links*/
 }
 
-.nav-links a:hover
+.nav-links :hover
 {
-color:greenyellow; /*color change when hovered over*/
+color:rgb(255, 47, 47); /*color change when hovered over*/
+transform: scale(1.25); /* Enlarge slightly on hover */
+transition: transform 0.25s ease;
 }
 
 footer
 {    
 text-align:center;
-margin-right:cover;
-background-color:rgb(21, 4, 74);
+margin:cover;
+background-color:rgb(0, 0, 0);
 color:white;
+}
+
+.image1
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.image-container
+{
+display: flex;
+justify-content:center;
+align-items:center;
+}
+.image2
+{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    justify-content:center;
+    align-items:center;
+   
+}
+
+.image3
+{
+    width: 400px;
+    height: 400px;
+    border-radius: 10%;
+    object-fit: cover;
 }

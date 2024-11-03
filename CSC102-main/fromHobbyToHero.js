@@ -26,3 +26,5 @@ function holdPoints() {
     document.getElementById("roundScore").innerHTML = "Round Score: " + roundScore;//displays new value
     document.getElementById("message").innerHTML = "You held! Overly cautious?";//displays message
 }
+
+
