@@ -81,17 +81,17 @@ function sound(src)
 
 function eagle()
 {
-    mySound = new sound("sounds/eagleCall.mp3");
-    mySound.play();
+    mySound = new sound("sounds/eagleCall.mp3");//sources audio file to play
+    mySound.play();//plays audio file sourced above
 }
 
 function redTail()
 {
-    mySound = new sound ("sounds/redTailHawkSound.mp3");
-    mySound.play();
+    mySound = new sound ("sounds/redTailHawkSound.mp3");//sources audio file to play
+    mySound.play();//plays audio file sourced above
 }
 
 function stop()
 {
-    window.location.reload();
+    window.location.reload();//reloads page, effectively "stopping" anything being played and reseting to a fresh page
 }

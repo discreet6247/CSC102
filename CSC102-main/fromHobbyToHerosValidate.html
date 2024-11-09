@@ -9,6 +9,11 @@
  1. After quail picture background shifts
  2. there is no current way to know if it is a real name input, only if it is in letters
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////UPDATE 8 November 2024////////////////////////////////////////
+1) Added audio controls
+2) added audio buttons
+3) interactive buttons
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
 
  -->
 <!DOCTYPE html>
@@ -65,8 +70,8 @@
     <br>
     
     <div class = "title-container">
-    <audio controls>
-        <source src = "sounds/kestrelCalls.mp3"audio/mpeg"></source>
+    <audio controls><!--activates audio controls-->
+        <source src = "sounds/kestrelCalls.mp3"audio/mpeg"></source><!--plays kestrel sounds-->
         </audio>
     </div>
     
@@ -76,9 +81,9 @@
         </div>
         <br>
     <center>
-        <button class = "button-america" onclick = "eagle()">Bald Eagle</button>
-        <button class = "button-america-redTail" onclick = "redTail()">Red Tail Hawk</button>
-        <button class = "button-america-stopBird" onclick = "stop()">Stop</button>
+        <button class = "button-america" onclick = "eagle()">Bald Eagle</button><!--activates eagle function-->
+        <button class = "button-america-redTail" onclick = "redTail()">Red Tail Hawk</button><!--activates redTail function-->
+        <button class = "button-america-stopBird" onclick = "stop()">Stop</button><!--activates stop function-->
         <!--<button onclick = "play();">Play</button>
         <button onclick = "stop();">Stop</button>-->
     </center>
