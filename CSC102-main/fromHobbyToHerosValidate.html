@@ -41,7 +41,7 @@
 
     <form id = "inputForm" onsubmit = "return false"><!--resets page-->
         <div id = "instructions" class ="text-box"> <!--instructions for div-->
-            <h3 class = "title-container">
+    <h3 class = "title-container">
                 <!--Inputs for Name, Month, and Year-->
                 First name: <input type = "text" id = "fName">
                 Input Birth Month:  <input type = "number" id = "month"/>
@@ -58,5 +58,29 @@
     <div class = "title-container">
     <img id = "displayImage" src = "" alt = "Top Hat Quail" class = "image2" style = "display:none;"/><!--Hidden at start-->
     </div>
+    
+    <div class = "text-box">
+        Some calming Kestrel sounds for your pleasure.
+    </div>
+    <br>
+    
+    <div class = "title-container">
+    <audio controls>
+        <source src = "sounds/kestrelCalls.mp3"audio/mpeg"></source>
+        </audio>
+    </div>
+    
+    <br><br>
+    <div class = "text-box">
+        We have been lied to!!!!! The eagle does not sound like it does on TV!!!
+        </div>
+        <br>
+    <center>
+        <button class = "button-america" onclick = "eagle()">Bald Eagle</button>
+        <button class = "button-america-redTail" onclick = "redTail()">Red Tail Hawk</button>
+        <button class = "button-america-stopBird" onclick = "stop()">Stop</button>
+        <!--<button onclick = "play();">Play</button>
+        <button onclick = "stop();">Stop</button>-->
+    </center>
 </body>
 </html>

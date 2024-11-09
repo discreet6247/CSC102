@@ -69,3 +69,29 @@ else if (fName.length > 20)
         img.style.display = "block";
     }
 }
+
+function sound(src)
+{//add play function. Helper function
+	this.sound = document.createElement("audio"); //create audio
+	this.sound.src = src;//define src
+	this.play = function() {//music function
+	this.sound.play();//play sound
+	}
+}
+
+function eagle()
+{
+    mySound = new sound("sounds/eagleCall.mp3");
+    mySound.play();
+}
+
+function redTail()
+{
+    mySound = new sound ("sounds/redTailHawkSound.mp3");
+    mySound.play();
+}
+
+function stop()
+{
+    window.location.reload();
+}

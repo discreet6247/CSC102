@@ -151,3 +151,74 @@ align-items:center;
     border-radius: 10%;
     object-fit: cover;
 }
+
+.button-america
+{
+    color:rgb(255, 255, 255);
+    font-size:30px;
+    line-height:200px;
+    padding: 25px;
+    border: 5px solid red;
+    border-radius: 50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    text-align:center;
+    background-image:linear-gradient(blue,white);
+   /* box-shadow: rgb(255, 255, 255) 2px 2px 2px 2px;*/
+}
+
+.button-america:hover
+{
+background-size:cover;
+background-position: center;
+transition: background-image 5s ease;
+background-repeat: no-repeat;
+background-image: url("sounds/eagle.jpg");
+}
+
+.button-america-redTail
+{
+    color:rgb(255, 255, 255);
+    font-size:30px;
+    line-height:200px;
+    padding: 25px;
+    border: 5px solid red;
+    border-radius: 50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    text-align:center;
+    background-image:linear-gradient(blue,white);
+   /* box-shadow: rgb(255, 255, 255) 2px 2px 2px 2px;*/
+}
+.button-america-redTail:hover
+{
+background-size:cover;
+background-position: center;
+transition: background-image 5s ease;
+background-repeat: no-repeat;
+background-image: url("sounds/redTail.png");
+}
+
+.button-america-stopBird
+{
+    color:rgb(255, 255, 255);
+    font-size:30px;
+    line-height:200px;
+    padding: 25px;
+    border: 5px solid red;
+    border-radius: 50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    text-align:center;
+    background-image:linear-gradient(blue,white);
+   /* box-shadow: rgb(255, 255, 255) 2px 2px 2px 2px;*/
+}
+.button-america-stopBird:hover
+{
+background-size:cover;
+background-position: center;
+transition: background-image 5s ease;
+background-repeat: no-repeat;
+background-image: url("sounds/stopBird.jpg");
+}
+
