@@ -4,6 +4,14 @@
   1) removed title drone picture
   2)changed message on screen
   3) added beeDrone-->
+
+  <!--**************************************UPDATES**************************************************
+  11 November 
+  1) animated drone picture to bounce around screen
+  2) updated button to play a sound while picture is moving
+  3) Formated interactive buttons
+  4) added a pause feature for sound
+  ///////////////////////////////////////////////////////////////////////////////////////////////////-->
  <!DOCTYPE html>
   
  <html>
@@ -14,6 +22,7 @@
    </head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+   <script src = "moveImage.js"></script>
    <link rel = "stylesheet" href = "fromHobbyToHero.css">
 
     <body>
@@ -30,13 +39,20 @@
 
 <div class = "title-container">
       <h1 class = "title">From Hobby to Hero : UxS</h1>
+
   <br>
   <br>
+  
+   <button class = "button-america-drone" id = "startButton" onclick = "intervalStart();">Start</button>
+  <button class = "button-america-stopBird" id = "stopButton" onclick = "intervalStop();">Stop</button>
+
+
   <br>
 </div>
-<h1>Comming soon...probably</h1>
+<h1>Comming soon...probably</h1><br><br><br><br><br>
 <div class = "title-container">
-<img src = "Images/beeDrone.png" alt = "Description of image" class = "image3">
+<img src = "Images/beeDrone.png" id = "imgMeme" style = "position:absolute; left:100; top:100; width:200px;" class = "image3">
+
 </div>
     </body>
  </html>
