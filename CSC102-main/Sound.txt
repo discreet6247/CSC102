@@ -1,0 +1,8 @@
+function sound (src)
+{//add play function
+	this.sound = document.createElement("audio"); //create audio
+	this.sound.src = src;//define src
+	this.play = function() {//music function
+	this.sound.play();//play sound
+	}
+}

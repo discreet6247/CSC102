@@ -17,8 +17,8 @@ function intervalStart() {
     // Start the interval to move the image
     intervalidID = setInterval(function() {
         // Get the current position of the image (parse the style values)
-        var left = parseInt(image.style.left || 100); // Default to 0 if not set
-        var top = parseInt(image.style.top || 100);  // Default to 0 if not set
+        var left = parseInt(image.style.left || 100); // Default to 100 if not set
+        var top = parseInt(image.style.top || 100);  // Default to 100 if not set
 
         // Get the width and height of the window (viewport)
         var screenWidth = window.innerWidth;

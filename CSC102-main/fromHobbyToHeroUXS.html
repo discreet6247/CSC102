@@ -18,7 +18,7 @@
   
    <head>
 
-      <title>CSC102 Boards Page</title>
+      <title>CS102 UxS</title>
    </head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
@@ -42,17 +42,151 @@
 
   <br>
   <br>
-  
-   <button class = "button-america-drone" id = "startButton" onclick = "intervalStart();">Start</button>
-  <button class = "button-america-stopBird" id = "stopButton" onclick = "intervalStop();">Stop</button>
+  <!--Buttons to execute the start and stop of moving "Images/beeDrone.png"-->
+    <button class = "button-america-drone" id = "startButton" onclick = "intervalStart();">Start</button>
+    <button class = "button-america-stopBird" id = "stopButton" onclick = "intervalStop();">Stop</button>
 
 
   <br>
 </div>
-<h1>Comming soon...probably</h1><br><br><br><br><br>
+<br>
 <div class = "title-container">
 <img src = "Images/beeDrone.png" id = "imgMeme" style = "position:absolute; left:100; top:100; width:200px;" class = "image3">
 
 </div>
+<br><br>
+<div class = "title-container">
+<h2>First UAS build recommendations</h2>
+</div>
+
+<!--Table for information on a simple UAS build for hobbyist. Sets size of the table in comparison to the page-->
+<div id = "UAS" class = "text-box-uasTable">
+<table id = "firstUxS" border = "3" width = "100%">
+    <thead>
+        <!--Sets the % of each coloum by what is left of the established width above-->
+        <th style = "width: 20%">Nomenclature</th>
+        <th style = "width: 15%">Model</th>
+        <th style = "width: 19%">Specs</th>
+        <th style = "width: 40%">Function</th>
+        <th style = "width: 1%">QTY</th>
+        <th style = "width: 5%">Link</th>
+
+    </thead>
+    <tbody>
+        <!--Each "tr#" input places static information into the row corresponding in secuence to the above colloums
+        links on the bottom are referenced for the devices that are being used-->
+        <tr id = "tr1">
+            <td>Frame Kit</td>
+            <td>X500 V2</td>
+            <td>Carbon Fiber</td>
+            <td>Frame Body</td>
+            <td>1</td>
+            <td><a href="https://holybro.com/products/x500-v2-kits?variant=42541212008637">Frame</td>
+        </tr>
+        <tr id = "tr2">
+            <td>Motor</td>
+            <td>2216-920KV-CW</td>
+            <td>20A / 30A Peak</td>
+            <td>Motor</td>
+            <td>4</td>
+            <td><a href = "https://holybro.com/products/spare-parts-s500-v2-kit?_pos=2&_sid=62ad9a6c6&_ss=r&variant=41591094608061">Motor</a></td>
+        </tr>
+        <tr id = "tr3">
+            <td>Electronic Speed Controler (ESC)</td>
+            <td>BLHeli S</td>
+            <td>35A / 50 A</td>
+            <td>Motor Speed Controller</td>
+            <td>4</td>
+            <td><a href = "https://www.amazon.com/BESSTUUP-BLHeli-S-Brushless-ESC-Accessories/dp/B0C14KLSST">ESC</a></td>
+        </tr>
+        <tr id = "tr4">
+            <td>Power Distribution Board</td>
+            <td>PM03D</td>
+            <td>60A / 164A Peak</td>
+            <td>Power Distribution</td>
+            <td>1</td>
+            <td><a href = "https://holybro.com/products/pm03d-power-module?pr_prod_strat=jac&pr_rec_id=a86448128&pr_rec_pid=7192462491837&pr_ref_pid=7411835797693&pr_seq=uniform">Distribution</a></td>
+        </tr>
+        <tr id = "tr5">
+            <td>Telemetry</td>
+            <td>RFD900</td>
+            <td>902 - 928 MHz</td>
+            <td>Transeiver</td>
+            <td>2</td>
+            <td><a href = "https://www.amazon.com/RF-design-RFD900x-Telemetry-Bundle/dp/B078NHWBK2/ref=asc_df_B078NHWBK2?mcid=d28accc310013209ab4f02f068e1879a&hvadid=697015676115&hvpos=&hvnetw=g&hvrand=10889337683374923478&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9006718&hvtargid=pla-2308618889430&psc=1">Telemetry</a></td>
+        </tr>
+        <tr id = "tr6">
+            <td>Global Positioning System (GPS)</td>
+            <td>Ublox M10</td>
+            <td>GNSS L1</td>
+            <td>GPS</td>
+            <td>1</td>
+            <td><a href = "https://holybro.com/products/m10-gps?_pos=1&_sid=2d1dff049&_ss=r">GPS</a></td>
+        </tr>
+        <tr id = "tr7">
+            <td>Single Board Computer (SBC)</td>
+            <td>Raspberry Pi 5</td>
+            <td>8GB</td>
+            <td>Processing Unit</td>
+            <td>1</td>
+            <td><a href = "https://www.amazon.com/Raspberry-Pi-Quad-core-Cortex-A76-Processor/dp/B0CTQ3BQLS/ref=asc_df_B0CTQ3BQLS?mcid=86ff3b2df7c93b078b9f8b944d721336&hvadid=693535620612&hvpos=&hvnetw=g&hvrand=1009558586797486947&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9006718&hvtargid=pla-2321838038124">SBC</a></td>
+        </tr>
+        <tr id = "tr8">
+            <td>Flight Controller (FC)</td>
+            <td>Pixhawk 6x</td>
+            <td>STM32</td>
+            <td>Flight Controller</td>
+            <td>1</td>
+            <td><a href = "https://holybro.com/products/pixhawk-6x-rev3?_pos=55&_sid=7e17647f6&_ss=r">FC</a></td>
+        </tr>
+        <tr id = "tr9">
+            <td>Transmitter (TX)</td>
+            <td>Radiomaster TX16</td>
+            <td>2.4 GHz</td>
+            <td>Command and Control (C2)</td>
+            <td>1</td>
+            <td><a href = "https://www.getfpv.com/radiomaster-tx16s-mkii-2-4ghz-16ch-radio-transmitter-elrs-w-hall-gimbals-v4-0.html?gc_id=21805212384&g_special_campaign=true&gad_source=1">TX</a></td>
+        </tr>
+        
+        <tr id = "tr10">
+            <td>Radio Frequency Module</td>
+            <td>Bandit Micro 915 MHz</td>
+            <td>902 - 928 MHz / Express LRS (ELRS)</td>
+            <td>Frequency Hop Spread Spectrum (FHSS) + Chirp Spread Spectrum (CSS) RF C2 Link</td>
+            <td>1</td>
+            <td><a href = "https://www.radiomasterrc.com/products/bandit-micro-expresslrs-rf-module">ELRS</a></td>
+        </tr>
+    </tbody>
+  </div>
+  <!--Narrative and URL sources for this project-->
+<p>Table recommendations are based off of a Holybro PX4 Development Kit - X500 v2. Deviation made from the kit is the C2 link and the SBC.
+Parts were chosen for future development purposes.  RFD 900 is an excellent module capable of reliable long range communication using multiple
+ different protocols, specifically ELRS, which is extremely resilient in RF dense environments.  Raspberry pi 5 is an easy hobbiest board to 
+ make easy to add additional features such as video, optical identification, autonomous flight, obsticle avoidance, and any other feature you 
+ can think of.  Best way to pursue an intrest in this field is to start. Good luck.  For reference, I have completely destroied 5 of mine now and 
+ these were the components of my second attempt.  Currently working on the same platform with the same components with some additional LiDAR 
+ sensors.  Crash different :D. Please see link below for reference to the location to which this design is based. 
+ <br>
+ <a href = "https://holybro.com/products/px4-development-kit-x500-v2?variant=43018371629245">PX4 Development Kit - X500 v2</a><br>
+ <a Href = "https://youtu.be/27rbxCeCq4Y">Holybro X500 V2 PX4 Drone PX4 Development Kit</a>
+</p>
+
+</table>
+<p>
+  <img src = "Images/uasBuild.png" id = "uasBuild" style = "position:absolute; left:2500;" class = "image4">
+  <div class = "text-box-cite">
+    <!--Sources to be cited-->
+    Sources:<br>
+  Mads Tech. “Holybro X500 v2 PX4 Drone - Pixhawk PX4 Development Kit.” 
+  <br>YouTube, 26 Jan. 2023, www.youtube.com/watch?v=27rbxCeCq4Y.
+  <br>Accessed 17 Nov. 2024.
+  <br>
+  <br>
+  “Px4 Development Kit - X500 V2.” Holybro Store,<br>holybro.com/products/px4-development-kit-x500-v2?variant=43018371629245.
+  <br>Accessed 17 Nov. 2024. 
+</div>
+
+</p>
+
     </body>
  </html>

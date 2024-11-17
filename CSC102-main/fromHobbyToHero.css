@@ -4,15 +4,26 @@
     justify-content:center;
     align-items:center;
     gap: 10px;
+    /*color:beige;*/
     
 }
 .title 
 {
     font-family:'Times New Roman', Times, serif;
     font-size: 75px;
-    color:rgb(255, 0, 0); /* Title font color*/
+    color:rgb(255, 255, 255); /* Title font color*/
     margin: 0;
     text-align: center;
+}
+
+.header-text
+{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    gap: 10px;
+    color:beige;
+    
 }
 
 .title-image/*super not working right now, probably need to look at how it is embeded.  its not in as a class Future Joe problem*/
@@ -81,10 +92,10 @@ text-align: center;
 font-size: 18px;
 }
 
-.navbar 
+/*.navbar 
 {
     background-color:rgba(0, 0, 0, 0.8);
-    padding: 15px; /*Space around the link*/
+    padding: 15px; 
     height: 30px;
     width: fit-content;
     line-height: 30px;
@@ -92,22 +103,35 @@ font-size: 18px;
     border-top-right-radius: 20px 20px;
     border-bottom-left-radius: 20px 20px;
     border-bottom-right-radius:20px 20px;
-}
+}*/
 .nav-links 
 {
-    list-style: none; 
-    margin: 0;
-    padding: 0;
+    list-style:none;
+    margin: 10px auto;
     display: flex;
+    justify-content:center; /*Centers links horizontaly*/
+    align-items: center;
+    color:rgb(0, 0, 0);
+    font-size:25px;
+    line-height:20px;
+    /*padding: 10px;*/
+    border: 10px solid rgb(5, 201, 255);
+    border-radius: 75px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style:italic;
+    background-image:linear-gradient(rgb(255, 0, 0),rgb(234, 160, 111)); 
+    width: fit-content;
+    text-align:center;
+    line-height: 1;
 }
 .nav-links li 
 {
-    margin-right: 20px; /*space between links*/
+    margin-right: 40px; /*space between links*/
 }
 
 .nav-links :hover
 {
-color:rgb(255, 47, 47); /*color change when hovered over*/
+color:rgba(0, 0, 0, 0.756); /*color change when hovered over*/
 transform: scale(1.25); /* Enlarge slightly on hover */
 transition: transform 0.25s ease;
 }
@@ -150,6 +174,17 @@ align-items:center;
     height: 200px;
     border-radius: 25%;
     object-fit: cover;
+}
+.image4
+{
+    width: 225px;
+    height: 225px;
+    border-radius: 25%;
+    text-align:right;
+    display: flex;
+    margin-left: auto;
+    position: absolute;
+    right: 200px;
 }
 
 .button-america
@@ -244,4 +279,69 @@ background-position: center;
 transition: background-image 5s ease;
 background-repeat: no-repeat;
 background-image: url("Images/highTechDrone.png");
+}
+
+.button-game
+{
+    color:rgb(255, 255, 255);
+    font-size:30px;
+    line-height:20px;
+    padding: 10px;
+    border: 5px solid rgb(255, 0, 0);
+    border-radius: 50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    text-align:center;
+    background-image:linear-gradient(rgb(255, 0, 0),rgb(255, 179, 0));
+   box-shadow: rgb(51, 210, 212) 2px 2px 2px 2px;
+}
+
+.button-game:hover
+{
+color:black;
+}
+
+/*Table for first UAS*/
+h1 
+{
+    text-align:center;
+    color:black;
+    margin-bottom:10px;
+}
+
+table, tr, td
+{
+padding:12px;
+text-align: left;
+font-size: 18px;
+}
+
+tr:nth-child(even)
+{
+    background-color:rgb(255, 151, 25);
+}
+.text-box-uasTable
+{
+background-color: rgba(0, 0, 0, 0.8);
+color:rgb(255, 255, 255); 
+padding: 20px;
+border-radius: 10px;
+max-width: 1200px;
+margin: 0 auto;
+box-shadow: 0px 4 px 10 px rgba(0, 0, 0, 0.1);
+text-align: center;
+font-size: 18px;
+}
+
+.text-box-cite
+{
+background-color: rgba(0, 0, 0, 0.8);
+color:aqua; 
+padding: 20px;
+border-radius: 10px;
+max-width: 1200px;
+margin: 0 auto;
+box-shadow: 0px 4 px 10 px rgba(0, 0, 0, 0.1);
+text-align: left;
+font-size: 18px;
 }
